@@ -1,0 +1,122 @@
+h1 {
+    font-size: 8vw;
+    font-family: "Helvetica", "Arial", sans-serif;
+    color: darkgreen;
+    max-width: 94%;
+}
+h3 {
+    font-size: 6vw;
+    font-family: "Helvetica", "Arial", sans-serif;
+    color: darkgreen;
+    max-width: 94%;
+}
+p {
+    font-size: 4vw;
+    font-family: "Consolas", "Courier", serif;
+}
+
+.feedback {
+    font-family: "Verdana", "Times", serif;
+}
+.phold {
+    max-width: 90%;
+    margin: 0 auto;
+}
+.ppad {
+    max-width: 5%;
+    background-color: lavender;
+}
+.body {
+    padding: 5px;
+    background-color: lavender;
+    max-width: 100%;
+    margin: 0 auto;
+}
+.sidepad {
+    max-width: 0%;
+    background-color: lightgray;
+}
+.review {
+    border: 3px solid Indigo;
+    margin: 2px;
+}
+
+img {
+  width: 100%;
+}
+
+html {
+  box-sizing: border-box;
+  background-color: lightgray;
+}
+body {
+  background-color: lightgray;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+.masonry-wrapper {
+  max-width: 960px;
+  margin-right: auto;
+  margin-left: auto;
+}
+.masonry {
+  columns: 1;
+  column-gap: 10px;
+}
+.masonry-item {
+  display: inline-block;
+  vertical-align: top;
+  margin-bottom: 10px;
+}
+.footer {
+    background-color: Lavender;
+    border: none;
+    color: darkgreen;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 0 auto;
+    cursor: pointer;
+    position: sticky;
+    bottom: 0px;
+}
+@media only screen and (max-width: 1023px) and (min-width: 600px) {  .masonry {
+    columns: 2;
+  }
+  h1 {
+      font-size: 5vw;
+  }
+  h3 {
+      font-size: 4vw;
+  }
+  p {
+      font-size: 2.5vw;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .masonry {
+    columns: 3;
+  }
+  h1 {
+      font-size: 28px;
+  }
+  h3 {
+      font-size: 23px;
+  }
+  p {
+      font-size: 19px;
+  }
+  .body {
+      max-width: 75%;
+  }
+  .sidepad {
+      max-width: 12.5%;
+  }
+}
