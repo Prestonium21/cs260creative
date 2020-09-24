@@ -1,20 +1,26 @@
 h1 {
     font-size: 8vw;
     font-family: "Helvetica", "Arial", sans-serif;
-    color: darkgreen;
+    color: darkblue;
     max-width: 94%;
 }
-h3 {
+h3,#header {
     font-size: 6vw;
     font-family: "Helvetica", "Arial", sans-serif;
-    color: darkgreen;
+    color: darkblue;
     max-width: 94%;
+}
+#header {
+    color: lavender;
 }
 p {
     font-size: 4vw;
     font-family: "Consolas", "Courier", serif;
 }
-
+#brand {
+    height: 8vw;
+    width: 8vw;
+}
 .feedback {
     font-family: "Verdana", "Times", serif;
 }
@@ -27,6 +33,7 @@ p {
     background-color: lavender;
 }
 .body {
+    min-height: 100vh;
     padding: 5px;
     background-color: lavender;
     max-width: 100%;
@@ -39,10 +46,6 @@ p {
 .review {
     border: 3px solid Indigo;
     margin: 2px;
-}
-
-img {
-  width: 100%;
 }
 
 html {
@@ -93,8 +96,12 @@ body {
   h1 {
       font-size: 5vw;
   }
-  h3 {
+  h3,#header {
       font-size: 4vw;
+  }
+  #brand {
+      height:6vw;
+      width:6vw;
   }
   p {
       font-size: 2.5vw;
@@ -107,8 +114,12 @@ body {
   h1 {
       font-size: 28px;
   }
-  h3 {
+  h3,#header {
       font-size: 23px;
+  }
+  #brand {
+      height: 26px;
+      width: 26px;
   }
   p {
       font-size: 19px;
