@@ -33,7 +33,7 @@ p {
     background-color: lavender;
 }
 .body {
-    min-height: 100vh;
+    min-height: 90vh;
     padding: 5px;
     background-color: lavender;
     max-width: 100%;
@@ -41,7 +41,7 @@ p {
 }
 .sidepad {
     max-width: 0%;
-    background-color: lightgray;
+    background-color: darkgray;
 }
 .review {
     border: 3px solid Indigo;
@@ -50,10 +50,10 @@ p {
 
 html {
   box-sizing: border-box;
-  background-color: lightgray;
+  background-color: darkgray;
 }
 body {
-  background-color: lightgray;
+  background-color: darkgray;
 }
 
 *,
