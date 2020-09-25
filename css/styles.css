@@ -4,18 +4,19 @@ h1 {
     color: darkblue;
     max-width: 94%;
 }
-h3,#header {
+h3,.header {
     font-size: 6vw;
     font-family: "Helvetica", "Arial", sans-serif;
     color: darkblue;
     max-width: 94%;
 }
-#header {
+.header {
     color: lavender;
 }
 p {
     font-size: 4vw;
     font-family: "Courier", serif;
+    font-weight: bold;
 }
 #brand {
     height: 8vw;
@@ -50,16 +51,12 @@ p {
 }
 .bodysplit {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
 }
 .bodyimg {
-    display: flex;
-    width: 90%;
-    height: 90%;
-}
-.bodytxt {
-    display: flex;
-    width: 90%; 
+    width: 100%;
+    height: 100%;
 }
 #title {
     background-color: black;
@@ -114,7 +111,7 @@ body {
   h1 {
       font-size: 5vw;
   }
-  h3,#header {
+  h3,.header {
       font-size: 4vw;
   }
   #brand {
@@ -124,15 +121,27 @@ body {
   p {
       font-size: 2.5vw;
   }
+  .bodysplit {
+      flex-wrap: nowrap;
+  }
+  .bodyimg {
+      display: flex;
+      width: 90%;
+      height: 90%;
+  }
+  .bodytxt {
+      display: flex;
+      width: 90%; 
+  }
 }
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 1024px) and (max-width: 1600px) {
   .masonry {
     columns: 3;
   }
   h1 {
       font-size: 28px;
   }
-  h3,#header {
+  h3,.header {
       font-size: 23px;
   }
   #brand {
@@ -150,5 +159,56 @@ body {
   }
   #title {
       max-width: 30%;
+  }
+  .bodysplit {
+      flex-wrap: nowrap;
+  }
+  .bodyimg {
+      display: flex;
+      width: 90%;
+      height: 90%;
+  }
+  .bodytxt {
+      display: flex;
+      width: 90%; 
+  }
+}
+@media only screen and (min-width: 1601px)  {
+  .masonry {
+    columns: 4;
+  }
+  h1 {
+      font-size: 38px;
+  }
+  h3,.header {
+      font-size: 33px;
+  }
+  #brand {
+      height: 36px;
+      width: 36px;
+  }
+  p {
+      font-size: 29px;
+  }
+  .body {
+      max-width: 75%;
+  }
+  .sidepad {
+      max-width: 12.5%;
+  }
+  #title {
+      max-width: 30%;
+  }
+  .bodysplit {
+      flex-wrap: nowrap;
+  }
+  .bodyimg {
+      display: flex;
+      width: 90%;
+      height: 90%;
+  }
+  .bodytxt {
+      display: flex;
+      width: 90%; 
   }
 }
