@@ -21,6 +21,7 @@ p {
     height: 8vw;
     width: 8vw;
 }
+
 .feedback {
     font-family: "Verdana", "Times", serif;
 }
@@ -47,7 +48,31 @@ p {
     border: 3px solid Indigo;
     margin: 2px;
 }
-
+.bodysplit {
+    width: 100%;
+    height: auto;
+}
+#bodyimg1 {
+    width: 25%;
+    float: right;
+}
+#bodytxt1 {
+    width: 60%;
+    float: left;
+}
+#bodyimg2 {
+    width: 25%;
+    float: left;
+}
+#bodytxt2 {
+    width: 60%;
+    float: right;
+}
+#title {
+    background-color: black;
+    color: lavender;
+    text-align: center;
+}
 html {
   box-sizing: border-box;
   background-color: darkgray;
@@ -129,5 +154,8 @@ body {
   }
   .sidepad {
       max-width: 12.5%;
+  }
+  #title {
+      max-width: 30%;
   }
 }
