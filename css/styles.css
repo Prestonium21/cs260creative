@@ -49,24 +49,17 @@ p {
     margin: 2px;
 }
 .bodysplit {
-    width: 100%;
-    height: auto;
+    display: flex;
+    justify-content: space-between;
 }
-#bodyimg1 {
-    width: 25%;
-    float: right;
+.bodyimg {
+    display: flex;
+    width: 90%;
+    height: 90%;
 }
-#bodytxt1 {
-    width: 60%;
-    float: left;
-}
-#bodyimg2 {
-    width: 25%;
-    float: left;
-}
-#bodytxt2 {
-    width: 60%;
-    float: right;
+.bodytxt {
+    display: flex;
+    width: 90%; 
 }
 #title {
     background-color: black;
