@@ -102,8 +102,6 @@ body {
     font-size: 16px;
     margin: 0 auto;
     cursor: pointer;
-    position: sticky;
-    bottom: 0px;
 }
 @media only screen and (max-width: 1023px) and (min-width: 600px) {  .masonry {
     columns: 2;
@@ -131,7 +129,7 @@ body {
   }
   .bodytxt {
       display: flex;
-      width: 90%; 
+      width: 90%;
   }
 }
 @media only screen and (min-width: 1024px) and (max-width: 1600px) {
@@ -170,7 +168,7 @@ body {
   }
   .bodytxt {
       display: flex;
-      width: 90%; 
+      width: 90%;
   }
 }
 @media only screen and (min-width: 1601px)  {
@@ -209,6 +207,6 @@ body {
   }
   .bodytxt {
       display: flex;
-      width: 90%; 
+      width: 90%;
   }
 }
