@@ -102,6 +102,8 @@ body {
     font-size: 16px;
     margin: 0 auto;
     cursor: pointer;
+    position: sticky;
+    bottom: 0px;
 }
 @media only screen and (max-width: 1023px) and (min-width: 600px) {  .masonry {
     columns: 2;
