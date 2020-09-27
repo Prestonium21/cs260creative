@@ -134,9 +134,7 @@ body {
 }
 
 .products {
-    position: absolute;
-    bottom: 2vw;
-    right: 3vw;
+    margin: 1rem;
 }
 
 @media screen and (max-width: 650px){
