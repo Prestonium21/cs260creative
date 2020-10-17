@@ -42,11 +42,6 @@ p,label {
     font-size: 5vw;
     font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
 }
-.meal {
-    -moz-column-count: 2;
-    -webkit-column-count: 2;
-    column-count: 2;
-}
 .dishElem {
     text-align: center;
     display: inline-block;
@@ -119,10 +114,8 @@ img {
         width: 45%;
         font-size: 1.5vw;
     }
-    .meal {
-        -moz-column-count: 4;
-        -webkit-column-count: 4;
-        column-count: 4;
+    .dishElem {
+      width: 90%;
     }
 }
 @media only screen and (min-width: 1401px)  {
@@ -143,9 +136,7 @@ img {
         width: 45%;
         font-size: 16px;
     }
-    .meal {
-        -moz-column-count: 5;
-        -webkit-column-count: 5;
-        column-count: 5;
+    .dishElem {
+      width: 85%;
     }
 }
