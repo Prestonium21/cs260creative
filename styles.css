@@ -1,0 +1,147 @@
+* {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+input {
+    width: 90%;
+    height: 7vw;
+    border-radius: 1vw;
+    justify-content: space-between;
+    margin: 0 auto;
+    font-size: 5vw;
+    font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+    font-weight: bold;
+}
+body {
+    background-color: black;
+}
+.content {
+    max-width: 100vw;
+    min-height: 100vh;
+    background-color: #d3f5e7;
+    padding: 2vw;
+    border: 1px forestgreen;
+    margin: 0 auto;
+}
+
+h1 {
+    font-size: 8vw;
+    font-family: "Helvetica", "Arial", sans-serif;
+    color: forestgreen;
+    max-width: 94%;
+}
+h2 {
+    font-size: 6vw;
+    font-family: "Helvetica", "Arial", sans-serif;
+    color: forestgreen;
+}
+
+p,label {
+    font-size: 5vw;
+    font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+}
+.meal {
+    -moz-column-count: 2;
+    -webkit-column-count: 2;
+    column-count: 2;
+}
+.dishElem {
+    text-align: center;
+    display: inline-block;
+    padding: 5px;
+    width: 100%;
+    background-color: #beabeb;
+    border-radius: 10px;
+    justify-content: space-between;
+    margin: 1.5vw 0;
+    /*margin: 1em 0;  for separating masonry-bricks vertically*/
+}
+.footer {
+    background-color: #beabeb;
+    border: none;
+    color: forestgreen;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 0 auto;
+    cursor: pointer;
+    position: sticky;
+    bottom: 0px;
+    font-weight: bold;
+    border-radius: 1vw;
+}
+
+
+@media only screen and (max-width: 799px) and (min-width: 500px) {
+    h1 {
+        font-size: 7vw;
+    }
+    h2 {
+        font-size: 5vw;
+    }
+    p,label {
+        font-size: 4vw;
+    }
+    input {
+        height: 6vw;
+        width: 45%;
+        font-size: 4vw;
+    }
+    .meal {
+        -moz-column-count: 3;
+        -webkit-column-count: 3;
+        column-count: 3;
+    }
+}
+@media only screen and (min-width: 800px) and (max-width: 1400px) {
+    .content {
+        max-width: 90%;
+    }
+    h1 {
+        font-size: 4vw;
+    }
+    h2 {
+        font-size: 3vw;
+    }
+    p,label {
+        font-size: 1.5vw;
+    }
+    input {
+        height: 3vw;
+        width: 45%;
+        font-size: 1.5vw;
+    }
+    .meal {
+        -moz-column-count: 4;
+        -webkit-column-count: 4;
+        column-count: 4;
+    }
+}
+@media only screen and (min-width: 1401px)  {
+    .content {
+        max-width: 90%;
+    }
+    h1 {
+        font-size: 28px;
+    }
+    h2 {
+        font-size: 24px;
+    }
+    p,label {
+        font-size: 16px;
+    }
+    input {
+        height: 24px;
+        width: 45%;
+        font-size: 16px;
+    }
+    .meal {
+        -moz-column-count: 5;
+        -webkit-column-count: 5;
+        column-count: 5;
+    }
+}
