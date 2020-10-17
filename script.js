@@ -10,6 +10,6 @@ document.getElementById("generateFood").addEventListener("click", function(event
 		results += "<div class='meal'>";
 		results += "<div class='dishElem'><img src=" + json.image + "></div>";
 		results += "</div>";
-		document.getElementById("plateResult").innerHTML += results;
+		document.getElementById("plateResult").innerHTML = results + document.getElementById("plateResult").innerHTML;
 	});
 });
