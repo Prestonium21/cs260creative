@@ -7,9 +7,15 @@ document.getElementById("generateFood").addEventListener("click", function(event
 	}).then(function(json) {
 		//console.log(json);
 		let results = "";
-		results += "<div class='meal'>";
-		results += "<div class='dishElem'><img src=" + json.image + "></div>";
-		results += "</div>";
-		document.getElementById("plateResult").innerHTML = results + document.getElementById("plateResult").innerHTML;
+		if(document.getElementById("plateResult").innerHTML == "") {
+			results += "<div class='meal'>";
+			results += "<div class='dishElem'><img src=" + json.image + "></div>";
+			results += "</div>";
+			document.getElementById("plateResult").innerHTML = results;
+		}
+		else {
+			results += "<div class='dishElem'><img src=" + json.image + "></div>";
+			document.getElementById('meal').innerHTML = results + document.getElementById('meal').innerHTML;
+		}
 	});
 });
