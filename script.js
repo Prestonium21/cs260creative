@@ -8,8 +8,8 @@ document.getElementById("generateFood").addEventListener("click", function(event
 		//console.log(json);
 		let results = "";
 		results += "<div class='meal'>";
-		results += "<img src=" + json.image + ">";
+		results += "<div class='dishElem'><img src=" + json.image + "></div>";
 		results += "</div>";
-		document.getElementById("plateResult").innerHTML = results;
+		document.getElementById("plateResult").innerHTML += results;
 	});
 });
