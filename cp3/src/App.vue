@@ -1,42 +1,135 @@
 <template>
-  <div id="app">
-    <div id="nav">
-      <img alt="logo" class="logo" src="./assets/logo.svg" />
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link> |
-      <router-link to="/cart">Cart</router-link>
+<div id="app">
+  <div id="menu">
+    <div id="brand">
+      <router-link to="/">
+        <img class="logo" src="./assets/logo.svg">
+      </router-link>
     </div>
-    <router-view />
+    <div id="brandname">
+        <h1>MetaBG</h1>
+    </div>
+    <div id="side">
+      <router-link to="/about">
+        <div class="menu-item about">
+          <img src="/images/about.jpg">
+          <p>About</p>
+        </div>
+      </router-link>
+      <router-link to="/browse">
+        <div class="menu-item browse">
+          <img src="/images/tags.svg">
+          <p>Categories</p>
+        </div>
+      </router-link>
+      <router-link to="/cart">
+        <div class="menu-item cart">
+          <img src="/images/list.svg">
+          <p id="cartnum">{{cartnum}} items</p>
+        </div>
+      </router-link>
+    </div>
   </div>
+  <router-view />
+  <div>
+    <a class="footer" href="https://github.com/Prestonium21/cs260creative.git">Github Repo</a>
+  </div>
+</div>
 </template>
 
+<script>
+export default {
+	computed: {
+		cartnum() {
+			return this.$root.$data.cart.length;
+			//console.log(this.$root.$data.cart);
+		}
+	}
+}
+</script>
+
 <style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 50px 100px;
+
+}
+
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
+  min-height: 95vh;
 }
 
-#nav {
-  padding: 30px;
+#menu {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-column-gap: 5px;
+  grid-template-areas: "none brand side";
+  margin-bottom: 50px;
+  padding: 10px;
   background-color: teal;
-  border-radius: 1vw;
+  border-radius: 10px;
+  justify-content: space-between;
 }
 
-#nav a {
-  font-size: 1.5vw;
-  font-weight: bold;
-  color: #2c3e50;
+#menu a {
+  color: lightgray;
 }
 
-#nav a.router-link-exact-active {
-  color: #42b983;
+#brand {
+  display: flex;
+  justify-content: left;
 }
-.logo {
-  width: 3vw;
+
+#brand img {
+  width: 5vw;
   border: 0;
-  float: left;
+}
+
+#side {
+  grid-area: side;
+  display: flex;
+  justify-content: flex-end;
+}
+
+#side img {
+  width: 50px;
+}
+
+.menu-item {
+  display: flex;
+  flex-direction: column;
+}
+
+.menu-item p {
+  margin: 0px;
+}
+
+.about {
+  margin-right: 20px;
+}
+
+.browse {
+  margin-right: 10px;
+}
+
+
+.footer {
+    background-color: teal;
+    border: none;
+    color: black;
+    padding: 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 0 auto;
+    cursor: pointer;
+    position: sticky;
+    bottom: 0px;
+    font-weight: bold;
+    border-radius: 8px;
 }
 </style>
